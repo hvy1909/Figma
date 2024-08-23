@@ -38,10 +38,10 @@ export default function Home() {
           {/* Section: Introduction */}
           <div>
             <div className="lg:mt-12 xs:m-0">
-              <h1 className="text-4xl font-extrabold lg:my-5 xs:m-0 xs:text-center">
+              <h1 className="text-4xl font-extrabold lg:my-5 xs:m-0 xs:text-center lg:text-left">
                 Welcome to AceLounge Club!
               </h1>
-              <h2 className="text-2xl font-bold my-5">
+              <h2 className="text-2xl md:text-3xl md:text-center lg:text-left font-bold my-5">
                 Join us for the Grand Inauguration!
               </h2>
               <p className="lg:block xs:hidden my-5">
@@ -50,71 +50,73 @@ export default function Home() {
               </p>
 
               {/* Launch Info */}
-              <div
-                // style={{ display: "flex", backgroundColor: "rgba(0, 0, 0, 0.7)" }}
-                className="lg:flex lg:bg-black/70 xs:bg-black/70 xs:border-collapse"
-              >
-                <div className="p-2 flex-grow space-y-1">
+              <div className="lg:flex lg:bg-black/70 xs:bg-black/70 xs:border-collapse">
+                <div className="p-2 flex-grow space-y-1 ">
                   <div className="flex items-center space-x-1">
                     <div className="uppercase text-lg text-white font-bold">
-                      Launch Date
+                      <p className="md:text-3xl lg:text-xl">Launch Date</p>
                     </div>
-                    <div className="text-red-500">&#128640;</div>
+                    <div className="text-red-500">
+                      <img className="w-5" src="/icrocket.png" alt="anh" />
+                    </div>
                   </div>
                   <hr className="border-red-600 w-full" />
 
                   <div className="space-y-1 bg-opacity-50">
                     <div className="flex items-center space-x-2">
-                      <div className="text-lg">&#127942;</div>
+                      <div className="text-lg">
+                        <img className="w-5" src="/icrank.png" alt="anh" />
+                      </div>
                       <div className="text-sm font-bold text-white">
-                        Tournament:
+                        <p className="md:text-3xl lg:text-xl">Tournament:</p>
                       </div>
                       <div className="font-bold text-yellow-400">
-                        Grand Inauguration
+                        <p className="md:text-3xl lg:text-xl text-yellow-400">
+                          Grand Inauguration Freeroll
+                        </p>
                       </div>
                     </div>
                     <div className="flex items-center space-x-1">
-                      <div className="text-lg">&#127942;</div>
-                      <div className="text-sm font-bold text-white">
-                        Tournament:
+                      <div className="text-lg">
+                        <img className="w-5" src="/cup.png" alt="" />
                       </div>
-                      <div className="font-bold text-yellow-400">Freeroll</div>
-                    </div>
-                  </div>
-
-                  <div className="flex items-center space-x-1">
-                    <div className="text-xl">&#127941;</div>
-                    <div className="text-l text-white font-bold">
-                      Prize Pool:
-                    </div>
-                    <div className="text-2xl font-bold text-yellow-500">
-                      $10,000 <span className="text-lg">Guaranteed</span>
+                      <div className="text-sm font-bold text-white">
+                        <p className="md:text-3xl lg:text-xl"> Prize Pool:</p>
+                      </div>
+                      <div className="font-bold text-yellow-400">
+                        <img className="w-52" src="/10000.png" alt="khong" />
+                      </div>
                     </div>
                   </div>
                 </div>
 
                 <div className="xs:flex ">
                   <div
-                    className="lg:w-24 xs:w-52 xs:h-48  bg-gradient-to-b from-red-600 to-red-900 text-center text-white p-2 flex flex-col justify-center items-center"
+                    className="lg:w-24 md:w-full lg:h-44 xs:w-52 xs:h-48 md:flex xs:flex lg:flex-col bg-gradient-to-b from-red-600 to-red-900 text-center text-white p-2 justify-center items-center"
                     style={{
                       background:
                         "linear-gradient(180deg, rgba(255, 0, 0, 0.9) 0%, rgba(131, 20, 20, 0.9) 100%)",
                     }}
                   >
-                    <div className="text-2xl font-bold">20</div>
-                    <div className="text-lg uppercase">Jun</div>
+                    <div className="md:text-3xl lg:text-4xl xs:text-4xl xs:m-3 lg:m-0 font-pathway-gothic-one  md:mr-3">
+                      20
+                    </div>
+                    <div className="md:text-3xl lg:text-xl xs:text-3xl  uppercase">
+                      jun
+                    </div>
                   </div>
                   <div
-                    className="lg:w-24 xs:w-52 xs:h-48 bg-gradient-to-b from-red-600 to-red-900 text-center text-white p-2 flex flex-col justify-center items-center"
+                    className="lg:w-24 lg:h-44 md:w-full xs:w-52 xs:h-48 bg-gradient-to-b from-red-600 to-red-900 text-center text-white p-2 flex flex-col justify-center items-center"
                     style={{
                       background:
                         "linear-gradient(to bottom, rgba(131, 20, 20, 0.9), rgba(0, 0, 0, 0.9))",
                     }}
                   >
-                    <div className="text-lg">2:00pm</div>
+                    <div className="lg:text-xl md :text-3xl xs:text-3xl">
+                      2:00pm
+                    </div>
                   </div>
                 </div>
-                <div></div>
               </div>
             </div>
           </div>
@@ -132,7 +134,7 @@ export default function Home() {
                   variant="outlined"
                   InputProps={{
                     startAdornment: (
-                      <img width="23px" height="23px" src="/person.png" />
+                      <img width="23px" height="23px" src="/iconperson.png" />
                     ),
                   }}
                   sx={{
@@ -156,7 +158,7 @@ export default function Home() {
                   variant="outlined"
                   InputProps={{
                     startAdornment: (
-                      <img width="23px" height="23px" src="/email.png" />
+                      <img width="23px" height="23px" src="/icemail.png" />
                     ),
                   }}
                   sx={{
@@ -180,7 +182,7 @@ export default function Home() {
                   variant="outlined"
                   InputProps={{
                     startAdornment: (
-                      <img width="22px" height="22px" src="/smartphone.png" />
+                      <img width="22px" height="22px" src="/icphone.png" />
                     ),
                   }}
                   sx={{
@@ -201,7 +203,7 @@ export default function Home() {
                 <Button
                   className="w-[231px] h-14 shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)]"
                   startIcon={
-                    <img width="22px" height="22px" src="/sent-1.png" />
+                    <img width="22px" height="22px" src="/icsent.png" />
                   }
                   variant="contained"
                   sx={{
@@ -224,33 +226,21 @@ export default function Home() {
         </div>
 
         {/* Download Section */}
-        <div className="lg:flex justify-center space-x-4 mt-8 lg:my-12 xs:mx-4 ">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 justify-items-center lg:justify-center mt-8 pb-8 lg:my-12 xs:mx-4">
+          <a href="#">
+            <img src="/gg.png" alt="Google Play" className="h-12 xs:h-20" />
+          </a>
+          <a href="#">
+            <img src="/icms.png" alt="App Store" className="h-12 xs:h-20" />
+          </a>
+          <a href="#">
+            <img src="/icms.png" alt="App Store" className="h-12 xs:h-20" />
+          </a>
           <a href="#">
             <img
-              src="/gg.png"
-              alt="Google Play"
-              className="h-12 xs:h-20 xs:ml-12 lg:ml-0"
-            />
-          </a>
-          <a className="xs:ml-5" href="#">
-            <img
-              src="/gg.png"
-              alt="App Store"
-              className="h-12 xs:h-20 xs:ml-12"
-            />
-          </a>
-          <a className="xs:ml-5" href="#">
-            <img
-              src="/gg.png"
-              alt="Microsoft Store"
-              className="h-12 xs:h-20 xs:ml-12"
-            />
-          </a>
-          <a className="xs:ml-5" href="#">
-            <img
-              src="/gg.png"
+              src="/icappstore.png"
               alt="Download for Android"
-              className="h-12 xs:h-20 xs:ml-12"
+              className="h-12 xs:h-20"
             />
           </a>
         </div>
@@ -258,19 +248,19 @@ export default function Home() {
       <div className="w-full h-fit lg:hidden xs:block xs:bg-black xs:h-max py-14">
         <Join />
       </div>
-      <div className="bg-gradient-to-r to-[#E70404] from-[#850202] ">
+      <div className="bg-gradient-to-r to-[#E70404] from-[#850202]  xs:px-4">
         <Play />
       </div>
-      <div className="bg-gradient-to-b from-[#000000] to-[#450505] py-[40px] md:py-[80px]">
+      <div className="bg-gradient-to-b from-[#000000] to-[#450505]  space-y-6 lg:space-y-0 lg:space-x-6">
         <Enyoy />
       </div>
-      <div className="w-full h-fit lg:h-[658px] bg-gradient-to-r from-[#850202] to-[#e60404]">
+      <div className=" w-full h-fit bg-gradient-to-r from-[#850202] to-[#e60404]">
         <Deposit />
       </div>
-      <div className="h-screen relative flex items-center justify-center bg-gradient-to-b from-[#000000] to-[#450505]">
+      <div className=" h-screen relative lg:flex xs:flex-col items-center justify-center bg-gradient-to-b from-[#000000] to-[#450505]">
         <Quick />
       </div>
-      <div className="h-screen relative flex items-center justify-center bg-gradient-to-r from-[#850202] to-[#e60404]">
+      <div className=" h-max relative lg:flex xs:flex-col items-center justify-center bg-gradient-to-r from-[#850202] to-[#e60404]">
         <Loop />
       </div>
     </>

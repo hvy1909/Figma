@@ -60,20 +60,22 @@ function Header() {
         {/* Download Button for Desktop */}
         <div className="xs:hidden lg:block">
           <Button
-            className="shadow-lg z-10 xs:hidden lg:block"
+            className="w-[150px] h-14 shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)]"
+            startIcon={<img width="22px" height="22px" src="/dow.png" />}
             variant="contained"
             sx={{
               textTransform: "none",
               color: "#fff",
-              fontSize: "16",
-              background: "linear-gradient(180deg, #ff0000, #831414)",
-              borderRadius: "15px",
+              fontSize: "20",
+              background: "linear-gradient(180deg, #FF0000, #831414)",
+              borderRadius: "10px",
               "&:hover": {
-                background: "linear-gradient(180deg, #ff0000, #831414)",
+                background: "linear-gradient(180deg, #FF0000, #831414)",
               },
+              width: 150,
             }}
           >
-            DOWNLOAD
+            DOWLOAD
           </Button>
         </div>
       </header>

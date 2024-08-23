@@ -1,6 +1,8 @@
+import { Button } from "@mui/material";
+
 function Deposit() {
   return (
-    <div className="min-h-screen bg-red-600 flex justify-center items-center">
+    <div className=" bg-red-600 flex justify-center items-center">
       <div className="bg-red-500 rounded-lg p-8 flex xs:flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-6">
         <div>
           <img src="/vi.png" alt="Wallet Icon" className="w-96 h-96" />
@@ -31,14 +33,26 @@ function Deposit() {
           </div>
 
           <div className="flex justify-center">
-            <button className="bg-green-600 text-white text-lg py-2 px-8 rounded-xl text-center flex items-center justify-center">
-              <img
-                src="/deposit-icon.png"
-                alt="Deposit Icon"
-                className="w-6 h-6 mr-2"
-              />
+            <Button
+              className="w-[210px] h-14 shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)]"
+              startIcon={
+                <img width="22px" height="22px" src="/requestmoney.png" />
+              }
+              variant="contained"
+              sx={{
+                textTransform: "none",
+                color: "#fff",
+                fontSize: "20",
+                background: "linear-gradient(180deg, #14FF00, #215104)",
+                borderRadius: "10px",
+                "&:hover": {
+                  background: "linear-gradient(180deg, #14FF00, #215104)",
+                },
+                width: 210,
+              }}
+            >
               Deposit
-            </button>
+            </Button>
           </div>
 
           <p className="text-white text-sm">

@@ -2,7 +2,7 @@ import { Button, TextField } from "@mui/material";
 
 function join() {
   return (
-    <div className="xs:block lg:hidden xs:bg-[#7f1d1d] xs:w-72 xs:ml-14 xs:rounded-2xl">
+    <div className="xs:block lg:hidden xs:bg-[#7f1d1d] xs:w-72 xs:ml-14 xs:rounded-2xl md:ml-56">
       <div>
         <div>
           <h3 className="text-2xl font-bold text-white text-center mb-4">
@@ -15,7 +15,7 @@ function join() {
               variant="outlined"
               InputProps={{
                 startAdornment: (
-                  <img width="23px" height="23px" src="/person.png" />
+                  <img width="23px" height="23px" src="/iconperson.png" />
                 ),
               }}
               sx={{
@@ -39,7 +39,7 @@ function join() {
               variant="outlined"
               InputProps={{
                 startAdornment: (
-                  <img width="23px" height="23px" src="/email.png" />
+                  <img width="23px" height="23px" src="/icemail.png" />
                 ),
               }}
               sx={{
@@ -63,7 +63,7 @@ function join() {
               variant="outlined"
               InputProps={{
                 startAdornment: (
-                  <img width="22px" height="22px" src="/smartphone.png" />
+                  <img width="22px" height="22px" src="/icphone.png" />
                 ),
               }}
               sx={{
@@ -83,7 +83,7 @@ function join() {
             />
             <Button
               className="w-[231px] h-14 shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)]"
-              startIcon={<img width="22px" height="22px" src="/sent-1.png" />}
+              startIcon={<img width="22px" height="22px" src="/icsent.png" />}
               variant="contained"
               sx={{
                 textTransform: "none",

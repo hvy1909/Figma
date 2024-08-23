@@ -1,3 +1,5 @@
+import { Button } from "@mui/material";
+
 function Enyoy() {
   return (
     <div className="text-center py-8">
@@ -23,95 +25,111 @@ function Enyoy() {
         </div>
         <div className="xs:flex-col min-w-[280px] lg:flex-row bg-gradient-to-r from-[#FF0000]/40 to-[#FF0000]/0 rounded-tl-[50px] rounded-bl-[50px] p-6 flex items-start text-left snap-start">
           <img
-            src="/flash.png"
+            src="/card.png"
             alt="Instant Transactions"
             className="h-36 mb-4 w-48"
           />
           <div>
             <h3 className="text-xl font-semibold mb-2 text-white">
-              Instant Transactions
+              Swift Payouts, Guaranteed
             </h3>
             <hr />
             <p className="text-sm">
-              Enjoy seamless gaming with instant deposits and withdrawals. No
-              delays in play, ensuring a smooth, swift gaming experience.
+              Guaranteed swift payouts: Receive winnings in under 10 minutes.
+              Quick, efficient fund access ensures player satisfaction.
             </p>
           </div>
         </div>
         <div className="xs:flex-col min-w-[280px] lg:flex-row bg-gradient-to-r from-[#FF0000]/40 to-[#FF0000]/0 rounded-tl-[50px] rounded-bl-[50px] p-6 flex items-start text-left snap-start">
           <img
-            src="/flash.png"
+            src="/cupcard.png"
             alt="Instant Transactions"
             className="h-36 mb-4 w-48"
           />
           <div>
             <h3 className="text-xl font-semibold mb-2 text-white">
-              Instant Transactions
+              Monthly Freerolls
             </h3>
             <hr />
             <p className="text-sm">
-              Enjoy seamless gaming with instant deposits and withdrawals. No
-              delays in play, ensuring a smooth, swift gaming experience.
+              Compete in our monthly freerolls for the chance to win big.
+              Exciting tournaments add an extra thrill to your gaming
+              experience.
             </p>
           </div>
         </div>
         <div className="xs:flex-col min-w-[280px] lg:flex-row bg-gradient-to-r from-[#FF0000]/40 to-[#FF0000]/0 rounded-tl-[50px] rounded-bl-[50px] p-6 flex items-start text-left snap-start">
           <img
-            src="/flash.png"
+            src="/dealergirl.png"
             alt="Instant Transactions"
             className="h-36 mb-4 w-48"
           />
           <div>
             <h3 className="text-xl font-semibold mb-2 text-white">
-              Instant Transactions
+              24/7 Support
             </h3>
             <hr />
             <p className="text-sm">
-              Enjoy seamless gaming with instant deposits and withdrawals. No
-              delays in play, ensuring a smooth, swift gaming experience.
+              24/7 customer support ready to assist with any inquiries. Our team
+              ensures a seamless gaming experience for every player.
             </p>
           </div>
         </div>
         <div className="xs:flex-col min-w-[280px] lg:flex-row bg-gradient-to-r from-[#FF0000]/40 to-[#FF0000]/0 rounded-tl-[50px] rounded-bl-[50px] p-6 flex items-start text-left snap-start">
           <img
-            src="/flash.png"
+            src="/shile.png"
             alt="Instant Transactions"
             className="h-36 mb-4 w-48"
           />
           <div>
             <h3 className="text-xl font-semibold mb-2 text-white">
-              Instant Transactions
+              Secure and Fair Gaming
             </h3>
             <hr />
             <p className="text-sm">
-              Enjoy seamless gaming with instant deposits and withdrawals. No
-              delays in play, ensuring a smooth, swift gaming experience.
+              Committed to secure and fair gaming, employing the latest
+              technology to ensure a safe and trustworthy environment for all.
             </p>
           </div>
         </div>
         <div className="xs:flex-col min-w-[280px] lg:flex-row bg-gradient-to-r from-[#FF0000]/40 to-[#FF0000]/0 rounded-tl-[50px] rounded-bl-[50px] p-6 flex items-start text-left snap-start">
           <img
-            src="/flash.png"
+            src="/hatcard.png"
             alt="Instant Transactions"
             className="h-36 mb-4 w-48"
           />
           <div>
             <h3 className="text-xl font-semibold mb-2 text-white">
-              Instant Transactions
+              VIP Sponsorship
             </h3>
             <hr />
             <p className="text-sm">
-              Enjoy seamless gaming with instant deposits and withdrawals. No
-              delays in play, ensuring a smooth, swift gaming experience.
+              VIP sponsorship offers exclusive access to live events, with all
+              expenses paid, including travel. Experience elite poker play.
             </p>
           </div>
         </div>
       </div>
 
       <div className="mt-8">
-        <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full">
+        <Button
+          className="w-[210px] h-14 shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)]"
+          startIcon={<img width="22px" height="22px" src="/icsent.png" />}
+          variant="contained"
+          sx={{
+            textTransform: "none",
+            color: "#fff",
+            fontSize: "20",
+            background: "linear-gradient(180deg, #14FF00, #215104)",
+            borderRadius: "10px",
+            "&:hover": {
+              background: "linear-gradient(180deg, #14FF00, #215104)",
+            },
+            width: 210,
+          }}
+        >
           JOIN NOW!
-        </button>
+        </Button>
       </div>
     </div>
   );
